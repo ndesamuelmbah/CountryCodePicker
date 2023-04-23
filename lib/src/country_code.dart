@@ -65,7 +65,7 @@ class CountryCode {
         name: json['name'],
         iso2CountryCode: json['iso2CountryCode'],
         dialCode: json['dialCode'],
-        flagUri: '${json['iso2CountryCode'].toLowerCase()}.png',
+        flagUri: "assets/flags/${json['iso2CountryCode']}.png".toLowerCase(),
         mobileRegex: json['mobileRegex'] ?? "0?[1-9][0-9]{6,15}",
         iso3CurrencyCode: json['iso3CurrencyCode'] ??
             iso2countryCodeToIso3CurrencyCodes[json['iso2CountryCode']],
