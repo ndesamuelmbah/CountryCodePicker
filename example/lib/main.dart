@@ -88,7 +88,7 @@ class MyAppState extends State<MyApp> {
         Locale("zh")
       ],
       localizationsDelegates: const [
-        CountryLocalizations.delegate,
+        //CountryLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],

@@ -1,1237 +1,1538 @@
-const List<Map<String, String>> codes = [
+const List<Map<String, String>> countryCodes = [
   {
     "name": "افغانستان",
-    "code": "AF",
-    "dial_code": "+93",
+    "iso2CountryCode": "AF",
+    "dialCode": "+93",
+    "currencySymbol": "؋"
   },
   {
     "name": "Åland",
-    "code": "AX",
-    "dial_code": "+358",
+    "iso2CountryCode": "AX",
+    "dialCode": "+358",
+    "currencySymbol": "€"
   },
   {
     "name": "Shqipëria",
-    "code": "AL",
-    "dial_code": "+355",
+    "iso2CountryCode": "AL",
+    "dialCode": "+355",
+    "currencySymbol": "Lek"
   },
   {
     "name": "الجزائر",
-    "code": "DZ",
-    "dial_code": "+213",
+    "iso2CountryCode": "DZ",
+    "dialCode": "+213",
+    "currencySymbol": "دج"
   },
   {
     "name": "American Samoa",
-    "code": "AS",
-    "dial_code": "+1684",
+    "iso2CountryCode": "AS",
+    "dialCode": "+1684",
+    "currencySymbol": r"$"
   },
   {
     "name": "Andorra",
-    "code": "AD",
-    "dial_code": "+376",
+    "iso2CountryCode": "AD",
+    "dialCode": "+376",
+    "currencySymbol": "€"
   },
   {
     "name": "Angola",
-    "code": "AO",
-    "dial_code": "+244",
+    "iso2CountryCode": "AO",
+    "dialCode": "+244",
+    "currencySymbol": "Kz"
   },
   {
     "name": "Anguilla",
-    "code": "AI",
-    "dial_code": "+1264",
+    "iso2CountryCode": "AI",
+    "dialCode": "+1264",
+    "currencySymbol": r"$"
   },
   {
     "name": "Antarctica",
-    "code": "AQ",
-    "dial_code": "+672",
+    "iso2CountryCode": "AQ",
+    "dialCode": "+672",
+    "currencySymbol": r"$"
   },
   {
     "name": "Antigua and Barbuda",
-    "code": "AG",
-    "dial_code": "+1268",
+    "iso2CountryCode": "AG",
+    "dialCode": "+1268",
+    "currencySymbol": r"$"
   },
   {
     "name": "Argentina",
-    "code": "AR",
-    "dial_code": "+54",
+    "iso2CountryCode": "AR",
+    "dialCode": "+54",
+    "currencySymbol": r"$"
   },
   {
     "name": "Հայաստան",
-    "code": "AM",
-    "dial_code": "+374",
+    "iso2CountryCode": "AM",
+    "dialCode": "+374",
+    "currencySymbol": "֏"
   },
   {
     "name": "Aruba",
-    "code": "AW",
-    "dial_code": "+297",
+    "iso2CountryCode": "AW",
+    "dialCode": "+297",
+    "currencySymbol": "ƒ"
   },
   {
     "name": "Australia",
-    "code": "AU",
-    "dial_code": "+61",
+    "iso2CountryCode": "AU",
+    "dialCode": "+61",
+    "currencySymbol": r"$"
   },
   {
     "name": "Österreich",
-    "code": "AT",
-    "dial_code": "+43",
+    "iso2CountryCode": "AT",
+    "dialCode": "+43",
+    "currencySymbol": "€"
   },
   {
     "name": "Azərbaycan",
-    "code": "AZ",
-    "dial_code": "+994",
+    "iso2CountryCode": "AZ",
+    "dialCode": "+994",
+    "currencySymbol": "ман"
   },
   {
     "name": "Bahamas",
-    "code": "BS",
-    "dial_code": "+1242",
+    "iso2CountryCode": "BS",
+    "dialCode": "+1242",
+    "currencySymbol": r"$"
   },
   {
-    "name": "‏البحرين",
-    "code": "BH",
-    "dial_code": "+973",
+    "name": "\u200fالبحرين",
+    "iso2CountryCode": "BH",
+    "dialCode": "+973",
+    "currencySymbol": "BD"
   },
   {
     "name": "Bangladesh",
-    "code": "BD",
-    "dial_code": "+880",
+    "iso2CountryCode": "BD",
+    "dialCode": "+880",
+    "currencySymbol": "৳"
   },
   {
     "name": "Barbados",
-    "code": "BB",
-    "dial_code": "+1246",
+    "iso2CountryCode": "BB",
+    "dialCode": "+1246",
+    "currencySymbol": r"$"
   },
   {
     "name": "Белару́сь",
-    "code": "BY",
-    "dial_code": "+375",
+    "iso2CountryCode": "BY",
+    "dialCode": "+375",
+    "currencySymbol": "p."
   },
   {
     "name": "België",
-    "code": "BE",
-    "dial_code": "+32",
+    "iso2CountryCode": "BE",
+    "dialCode": "+32",
+    "currencySymbol": "€"
   },
   {
     "name": "Belize",
-    "code": "BZ",
-    "dial_code": "+501",
+    "iso2CountryCode": "BZ",
+    "dialCode": "+501",
+    "currencySymbol": r"BZ$"
   },
   {
     "name": "Bénin",
-    "code": "BJ",
-    "dial_code": "+229",
+    "iso2CountryCode": "BJ",
+    "dialCode": "+229",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^(21|22|23)?(4|6|9)[0-9]{7,7}$"
   },
   {
     "name": "Bermuda",
-    "code": "BM",
-    "dial_code": "+1441",
+    "iso2CountryCode": "BM",
+    "dialCode": "+1441",
+    "currencySymbol": r"$"
   },
   {
     "name": "ʼbrug-yul",
-    "code": "BT",
-    "dial_code": "+975",
+    "iso2CountryCode": "BT",
+    "dialCode": "+975",
+    "currencySymbol": "Nu."
   },
   {
     "name": "Bolivia",
-    "code": "BO",
-    "dial_code": "+591",
+    "iso2CountryCode": "BO",
+    "dialCode": "+591",
+    "currencySymbol": r"$b"
   },
   {
     "name": "Bosna i Hercegovina",
-    "code": "BA",
-    "dial_code": "+387",
+    "iso2CountryCode": "BA",
+    "dialCode": "+387",
+    "currencySymbol": "KM"
   },
   {
     "name": "Botswana",
-    "code": "BW",
-    "dial_code": "+267",
+    "iso2CountryCode": "BW",
+    "dialCode": "+267",
+    "currencySymbol": "P",
+    "mobileRegex": r"^[2-9][0-9]{6,8}$"
   },
   {
     "name": "Bouvetøya",
-    "code": "BV",
-    "dial_code": "+47",
+    "iso2CountryCode": "BV",
+    "dialCode": "+47",
+    "currencySymbol": "kr"
   },
   {
     "name": "Brasil",
-    "code": "BR",
-    "dial_code": "+55",
+    "iso2CountryCode": "BR",
+    "dialCode": "+55",
+    "currencySymbol": r"R$"
   },
   {
     "name": "British Indian Ocean Territory",
-    "code": "IO",
-    "dial_code": "+246",
+    "iso2CountryCode": "IO",
+    "dialCode": "+246",
+    "currencySymbol": r"$"
   },
   {
     "name": "Negara Brunei Darussalam",
-    "code": "BN",
-    "dial_code": "+673",
+    "iso2CountryCode": "BN",
+    "dialCode": "+673",
+    "currencySymbol": r"$"
   },
   {
     "name": "България",
-    "code": "BG",
-    "dial_code": "+359",
+    "iso2CountryCode": "BG",
+    "dialCode": "+359",
+    "currencySymbol": "лв"
   },
   {
     "name": "Burkina Faso",
-    "code": "BF",
-    "dial_code": "+226",
+    "iso2CountryCode": "BF",
+    "dialCode": "+226",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^[2-7][0-9]{7,7}$"
   },
   {
     "name": "Burundi",
-    "code": "BI",
-    "dial_code": "+257",
+    "iso2CountryCode": "BI",
+    "dialCode": "+257",
+    "currencySymbol": "FBu"
   },
   {
     "name": "Cambodia",
-    "code": "KH",
-    "dial_code": "+855",
+    "iso2CountryCode": "KH",
+    "dialCode": "+855",
+    "currencySymbol": "៛"
   },
   {
     "name": "Cameroon",
-    "code": "CM",
-    "dial_code": "+237",
+    "iso2CountryCode": "CM",
+    "dialCode": "+237",
+    "currencySymbol": "CFA",
+    "iso3CurrencyCode": "XAF",
+    "mobileRegex": r"^6[4-9][0-9]{7,7}$"
+  },
+  {
+    "name": "Cameroun",
+    "iso2CountryCode": "CM",
+    "dialCode": "+237",
+    "currencySymbol": "CFA",
+    "iso3CurrencyCode": "XAF",
+    "mobileRegex": r"^6[4-9][0-9]{7,7}$"
   },
   {
     "name": "Canada",
-    "code": "CA",
-    "dial_code": "+1",
+    "iso2CountryCode": "CA",
+    "dialCode": "+1",
+    "currencySymbol": r"$",
+    "mobileRegex": r"^[2-9][0-9]{9,9}$"
   },
   {
     "name": "Cabo Verde",
-    "code": "CV",
-    "dial_code": "+238",
+    "iso2CountryCode": "CV",
+    "dialCode": "+238",
+    "currencySymbol": r"$",
+    "mobileRegex": r"^[2-9][0-9]{6,6}$"
   },
   {
     "name": "Cayman Islands",
-    "code": "KY",
-    "dial_code": "+1345",
+    "iso2CountryCode": "KY",
+    "dialCode": "+1345",
+    "currencySymbol": r"$"
   },
   {
     "name": "Ködörösêse tî Bêafrîka",
-    "code": "CF",
-    "dial_code": "+236",
+    "iso2CountryCode": "CF",
+    "dialCode": "+236",
+    "currencySymbol": "FCF",
+    "mobileRegex": r"^(2|7)[0-9]{7,7}$"
   },
   {
     "name": "Tchad",
-    "code": "TD",
-    "dial_code": "+235",
+    "iso2CountryCode": "TD",
+    "dialCode": "+235",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^0?22[5|6]([0-4]|[8|9])[0-9]{4,4}$"
   },
   {
     "name": "Chile",
-    "code": "CL",
-    "dial_code": "+56",
+    "iso2CountryCode": "CL",
+    "dialCode": "+56",
+    "currencySymbol": r"$"
   },
   {
     "name": "中国",
-    "code": "CN",
-    "dial_code": "+86",
+    "iso2CountryCode": "CN",
+    "dialCode": "+86",
+    "currencySymbol": "¥"
   },
   {
     "name": "Christmas Island",
-    "code": "CX",
-    "dial_code": "+61",
+    "iso2CountryCode": "CX",
+    "dialCode": "+61",
+    "currencySymbol": r"$"
   },
   {
     "name": "Cocos (Keeling) Islands",
-    "code": "CC",
-    "dial_code": "+61",
+    "iso2CountryCode": "CC",
+    "dialCode": "+61",
+    "currencySymbol": r"$"
   },
   {
     "name": "Colombia",
-    "code": "CO",
-    "dial_code": "+57",
+    "iso2CountryCode": "CO",
+    "dialCode": "+57",
+    "currencySymbol": r"$"
   },
   {
     "name": "Komori",
-    "code": "KM",
-    "dial_code": "+269",
+    "iso2CountryCode": "KM",
+    "dialCode": "+269",
+    "currencySymbol": "KMF"
   },
   {
     "name": "République du Congo",
-    "code": "CG",
-    "dial_code": "+242",
+    "iso2CountryCode": "CG",
+    "dialCode": "+242",
+    "currencySymbol": "FCF",
+    "mobileRegex": r"^0?[2-6][0-9]{8,8}$"
   },
   {
     "name": "République démocratique du Congo",
-    "code": "CD",
-    "dial_code": "+243",
+    "iso2CountryCode": "CD",
+    "dialCode": "+243",
+    "currencySymbol": "CDF",
+    "mobileRegex": r"^0?(1|4)(|5|6)[0-9]{7,7}$"
   },
   {
     "name": "Cook Islands",
-    "code": "CK",
-    "dial_code": "+682",
+    "iso2CountryCode": "CK",
+    "dialCode": "+682",
+    "currencySymbol": r"$"
   },
   {
     "name": "Costa Rica",
-    "code": "CR",
-    "dial_code": "+506",
+    "iso2CountryCode": "CR",
+    "dialCode": "+506",
+    "currencySymbol": "₡"
   },
   {
     "name": "Côte d'Ivoire",
-    "code": "CI",
-    "dial_code": "+225",
+    "iso2CountryCode": "CI",
+    "dialCode": "+225",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^0?[1245678][0-9]{7,11}$"
   },
   {
     "name": "Hrvatska",
-    "code": "HR",
-    "dial_code": "+385",
+    "iso2CountryCode": "HR",
+    "dialCode": "+385",
+    "currencySymbol": "kn"
   },
   {
     "name": "Cuba",
-    "code": "CU",
-    "dial_code": "+53",
+    "iso2CountryCode": "CU",
+    "dialCode": "+53",
+    "currencySymbol": "₱"
   },
   {
     "name": "Κύπρος",
-    "code": "CY",
-    "dial_code": "+357",
+    "iso2CountryCode": "CY",
+    "dialCode": "+357",
+    "currencySymbol": "€"
   },
   {
     "name": "Česká republika",
-    "code": "CZ",
-    "dial_code": "+420",
+    "iso2CountryCode": "CZ",
+    "dialCode": "+420",
+    "currencySymbol": "Kč"
   },
   {
     "name": "Danmark",
-    "code": "DK",
-    "dial_code": "+45",
+    "iso2CountryCode": "DK",
+    "dialCode": "+45",
+    "currencySymbol": "kr"
   },
   {
     "name": "Djibouti",
-    "code": "DJ",
-    "dial_code": "+253",
+    "iso2CountryCode": "DJ",
+    "dialCode": "+253",
+    "currencySymbol": "Fdj"
   },
   {
     "name": "Dominica",
-    "code": "DM",
-    "dial_code": "+1767",
+    "iso2CountryCode": "DM",
+    "dialCode": "+1767",
+    "currencySymbol": r"$"
   },
   {
     "name": "República Dominicana",
-    "code": "DO",
-    "dial_code": "+1",
+    "iso2CountryCode": "DO",
+    "dialCode": "+1",
+    "currencySymbol": r"RD$"
   },
   {
     "name": "Ecuador",
-    "code": "EC",
-    "dial_code": "+593",
+    "iso2CountryCode": "EC",
+    "dialCode": "+593",
+    "currencySymbol": r"$"
   },
   {
-    "name": "مصر‎",
-    "code": "EG",
-    "dial_code": "+20",
+    "name": "مصر\u200e",
+    "iso2CountryCode": "EG",
+    "dialCode": "+20",
+    "currencySymbol": "£",
+    "mobileRegex": r"^0?1(0|1|2|5)[0-9]{8,8}$"
   },
   {
     "name": "El Salvador",
-    "code": "SV",
-    "dial_code": "+503",
+    "iso2CountryCode": "SV",
+    "dialCode": "+503",
+    "currencySymbol": r"$"
   },
   {
     "name": "Guinea Ecuatorial",
-    "code": "GQ",
-    "dial_code": "+240",
+    "iso2CountryCode": "GQ",
+    "dialCode": "+240",
+    "currencySymbol": "FCF",
+    "mobileRegex": r"^(2|3|5|6|7)[1-9][0-9]{7,7}$"
   },
   {
     "name": "ኤርትራ",
-    "code": "ER",
-    "dial_code": "+291",
+    "iso2CountryCode": "ER",
+    "dialCode": "+291",
+    "currencySymbol": "Nfk"
   },
   {
     "name": "Eesti",
-    "code": "EE",
-    "dial_code": "+372",
+    "iso2CountryCode": "EE",
+    "dialCode": "+372",
+    "currencySymbol": "kr"
   },
   {
     "name": "ኢትዮጵያ",
-    "code": "ET",
-    "dial_code": "+251",
+    "iso2CountryCode": "ET",
+    "dialCode": "+251",
+    "currencySymbol": "Br",
+    "mobileRegex": r"^0?91[0-9]{7,7}$"
   },
   {
     "name": "Falkland Islands",
-    "code": "FK",
-    "dial_code": "+500",
+    "iso2CountryCode": "FK",
+    "dialCode": "+500",
+    "currencySymbol": "£"
   },
   {
     "name": "Føroyar",
-    "code": "FO",
-    "dial_code": "+298",
+    "iso2CountryCode": "FO",
+    "dialCode": "+298",
+    "currencySymbol": "kr"
   },
   {
     "name": "Fiji",
-    "code": "FJ",
-    "dial_code": "+679",
+    "iso2CountryCode": "FJ",
+    "dialCode": "+679",
+    "currencySymbol": r"$"
   },
   {
     "name": "Suomi",
-    "code": "FI",
-    "dial_code": "+358",
+    "iso2CountryCode": "FI",
+    "dialCode": "+358",
+    "currencySymbol": "€"
   },
   {
     "name": "France",
-    "code": "FR",
-    "dial_code": "+33",
+    "iso2CountryCode": "FR",
+    "dialCode": "+33",
+    "currencySymbol": "€"
   },
   {
     "name": "Guyane française",
-    "code": "GF",
-    "dial_code": "+594",
+    "iso2CountryCode": "GF",
+    "dialCode": "+594",
+    "currencySymbol": "€"
   },
   {
     "name": "Polynésie française",
-    "code": "PF",
-    "dial_code": "+689",
+    "iso2CountryCode": "PF",
+    "dialCode": "+689",
+    "currencySymbol": "₣"
   },
   {
     "name": "Territoire des Terres australes et antarctiques fr",
-    "code": "TF",
-    "dial_code": "+262",
+    "iso2CountryCode": "TF",
+    "dialCode": "+262",
+    "currencySymbol": "€"
   },
   {
     "name": "Gabon",
-    "code": "GA",
-    "dial_code": "+241",
+    "iso2CountryCode": "GA",
+    "dialCode": "+241",
+    "currencySymbol": "FCF",
+    "mobileRegex": r"^0[1-7][0-9]{6,7}$"
   },
   {
     "name": "Gambia",
-    "code": "GM",
-    "dial_code": "+220",
+    "iso2CountryCode": "GM",
+    "dialCode": "+220",
+    "currencySymbol": "D",
+    "mobileRegex": r"^[1-9]{1,1}[0-9]{6,6}$"
   },
   {
     "name": "საქართველო",
-    "code": "GE",
-    "dial_code": "+995",
+    "iso2CountryCode": "GE",
+    "dialCode": "+995",
+    "currencySymbol": "GEL"
   },
   {
     "name": "Deutschland",
-    "code": "DE",
-    "dial_code": "+49",
+    "iso2CountryCode": "DE",
+    "dialCode": "+49",
+    "currencySymbol": "€"
   },
   {
     "name": "Ghana",
-    "code": "GH",
-    "dial_code": "+233",
+    "iso2CountryCode": "GH",
+    "dialCode": "+233",
+    "currencySymbol": "¢",
+    "mobileRegex": r"^0?(2|5)[0-9]{8,8}$"
   },
   {
     "name": "Gibraltar",
-    "code": "GI",
-    "dial_code": "+350",
+    "iso2CountryCode": "GI",
+    "dialCode": "+350",
+    "currencySymbol": "£"
   },
   {
     "name": "Ελλάδα",
-    "code": "GR",
-    "dial_code": "+30",
+    "iso2CountryCode": "GR",
+    "dialCode": "+30",
+    "currencySymbol": "€"
   },
   {
     "name": "Kalaallit Nunaat",
-    "code": "GL",
-    "dial_code": "+299",
+    "iso2CountryCode": "GL",
+    "dialCode": "+299",
+    "currencySymbol": "kr"
   },
   {
     "name": "Grenada",
-    "code": "GD",
-    "dial_code": "+1473",
+    "iso2CountryCode": "GD",
+    "dialCode": "+1473",
+    "currencySymbol": r"$"
   },
   {
     "name": "Guadeloupe",
-    "code": "GP",
-    "dial_code": "+590",
+    "iso2CountryCode": "GP",
+    "dialCode": "+590",
+    "currencySymbol": "€"
   },
   {
     "name": "Guam",
-    "code": "GU",
-    "dial_code": "+1671",
+    "iso2CountryCode": "GU",
+    "dialCode": "+1671",
+    "currencySymbol": r"$"
   },
   {
     "name": "Guatemala",
-    "code": "GT",
-    "dial_code": "+502",
+    "iso2CountryCode": "GT",
+    "dialCode": "+502",
+    "currencySymbol": "Q"
   },
   {
     "name": "Guernsey",
-    "code": "GG",
-    "dial_code": "+44",
+    "iso2CountryCode": "GG",
+    "dialCode": "+44",
+    "currencySymbol": "£"
   },
   {
     "name": "Guinée",
-    "code": "GN",
-    "dial_code": "+224",
+    "iso2CountryCode": "GN",
+    "dialCode": "+224",
+    "currencySymbol": "FG",
+    "mobileRegex": r"^[1-9][0-9]{6,9}$"
   },
   {
     "name": "Guiné-Bissau",
-    "code": "GW",
-    "dial_code": "+245",
+    "iso2CountryCode": "GW",
+    "dialCode": "+245",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^(44|95|96|97)[1-9][0-9]{6,7}$"
   },
   {
     "name": "Guyana",
-    "code": "GY",
-    "dial_code": "+592",
+    "iso2CountryCode": "GY",
+    "dialCode": "+592",
+    "currencySymbol": r"$"
   },
   {
     "name": "Haïti",
-    "code": "HT",
-    "dial_code": "+509",
+    "iso2CountryCode": "HT",
+    "dialCode": "+509",
+    "currencySymbol": "G"
   },
   {
     "name": "Heard Island and McDonald Islands",
-    "code": "HM",
-    "dial_code": "+0",
+    "iso2CountryCode": "HM",
+    "dialCode": "+0",
+    "currencySymbol": r"$"
   },
   {
     "name": "Vaticano",
-    "code": "VA",
-    "dial_code": "+379",
+    "iso2CountryCode": "VA",
+    "dialCode": "+379",
+    "currencySymbol": "€"
   },
   {
     "name": "Honduras",
-    "code": "HN",
-    "dial_code": "+504",
+    "iso2CountryCode": "HN",
+    "dialCode": "+504",
+    "currencySymbol": "L"
   },
   {
     "name": "香港",
-    "code": "HK",
-    "dial_code": "+852",
+    "iso2CountryCode": "HK",
+    "dialCode": "+852",
+    "currencySymbol": r"$"
   },
   {
     "name": "Magyarország",
-    "code": "HU",
-    "dial_code": "+36",
+    "iso2CountryCode": "HU",
+    "dialCode": "+36",
+    "currencySymbol": "Ft"
   },
   {
     "name": "Ísland",
-    "code": "IS",
-    "dial_code": "+354",
+    "iso2CountryCode": "IS",
+    "dialCode": "+354",
+    "currencySymbol": "kr"
   },
   {
     "name": "भारत",
-    "code": "IN",
-    "dial_code": "+91",
+    "iso2CountryCode": "IN",
+    "dialCode": "+91",
+    "currencySymbol": "₹"
   },
   {
     "name": "Indonesia",
-    "code": "ID",
-    "dial_code": "+62",
+    "iso2CountryCode": "ID",
+    "dialCode": "+62",
+    "currencySymbol": "Rp"
   },
   {
     "name": "ایران",
-    "code": "IR",
-    "dial_code": "+98",
+    "iso2CountryCode": "IR",
+    "dialCode": "+98",
+    "currencySymbol": "﷼"
   },
   {
     "name": "العراق",
-    "code": "IQ",
-    "dial_code": "+964",
+    "iso2CountryCode": "IQ",
+    "dialCode": "+964",
+    "currencySymbol": "ع.د"
   },
   {
     "name": "Éire",
-    "code": "IE",
-    "dial_code": "+353",
+    "iso2CountryCode": "IE",
+    "dialCode": "+353",
+    "currencySymbol": "€"
   },
   {
     "name": "Isle of Man",
-    "code": "IM",
-    "dial_code": "+44",
+    "iso2CountryCode": "IM",
+    "dialCode": "+44",
+    "currencySymbol": "£"
   },
   {
     "name": "ישראל",
-    "code": "IL",
-    "dial_code": "+972",
+    "iso2CountryCode": "IL",
+    "dialCode": "+972",
+    "currencySymbol": "₪"
   },
   {
     "name": "Italia",
-    "code": "IT",
-    "dial_code": "+39",
+    "iso2CountryCode": "IT",
+    "dialCode": "+39",
+    "currencySymbol": "€"
   },
   {
     "name": "Jamaica",
-    "code": "JM",
-    "dial_code": "+1876",
+    "iso2CountryCode": "JM",
+    "dialCode": "+1876",
+    "currencySymbol": r"$"
   },
   {
     "name": "日本",
-    "code": "JP",
-    "dial_code": "+81",
+    "iso2CountryCode": "JP",
+    "dialCode": "+81",
+    "currencySymbol": "¥"
   },
   {
     "name": "Jersey",
-    "code": "JE",
-    "dial_code": "+44",
+    "iso2CountryCode": "JE",
+    "dialCode": "+44",
+    "currencySymbol": "€"
   },
   {
     "name": "الأردن",
-    "code": "JO",
-    "dial_code": "+962",
+    "iso2CountryCode": "JO",
+    "dialCode": "+962",
+    "currencySymbol": "د.ا"
   },
   {
     "name": "Қазақстан",
-    "code": "KZ",
-    "dial_code": "+7",
+    "iso2CountryCode": "KZ",
+    "dialCode": "+7",
+    "currencySymbol": "лв"
   },
   {
     "name": "Kenya",
-    "code": "KE",
-    "dial_code": "+254",
+    "iso2CountryCode": "KE",
+    "dialCode": "+254",
+    "currencySymbol": "Ksh",
+    "mobileRegex": r"^0?(1|7)[0-9]{8,8}$"
   },
   {
     "name": "Kiribati",
-    "code": "KI",
-    "dial_code": "+686",
+    "iso2CountryCode": "KI",
+    "dialCode": "+686",
+    "currencySymbol": r"$"
   },
   {
     "name": "북한",
-    "code": "KP",
-    "dial_code": "+850",
+    "iso2CountryCode": "KP",
+    "dialCode": "+850",
+    "currencySymbol": "₩"
   },
   {
     "name": "대한민국",
-    "code": "KR",
-    "dial_code": "+82",
+    "iso2CountryCode": "KR",
+    "dialCode": "+82",
+    "currencySymbol": "₩"
   },
   {
     "name": "Republika e Kosovës",
-    "code": "XK",
-    "dial_code": "+383",
+    "iso2CountryCode": "XK",
+    "dialCode": "+383",
+    "currencySymbol": "€"
   },
   {
     "name": "الكويت",
-    "code": "KW",
-    "dial_code": "+965",
+    "iso2CountryCode": "KW",
+    "dialCode": "+965",
+    "currencySymbol": "KD"
   },
   {
     "name": "Кыргызстан",
-    "code": "KG",
-    "dial_code": "+996",
+    "iso2CountryCode": "KG",
+    "dialCode": "+996",
+    "currencySymbol": "лв"
   },
   {
     "name": "ສປປລາວ",
-    "code": "LA",
-    "dial_code": "+856",
+    "iso2CountryCode": "LA",
+    "dialCode": "+856",
+    "currencySymbol": "₭"
   },
   {
     "name": "Latvija",
-    "code": "LV",
-    "dial_code": "+371",
+    "iso2CountryCode": "LV",
+    "dialCode": "+371",
+    "currencySymbol": "Ls"
   },
   {
     "name": "لبنان",
-    "code": "LB",
-    "dial_code": "+961",
+    "iso2CountryCode": "LB",
+    "dialCode": "+961",
+    "currencySymbol": "£"
   },
   {
     "name": "Lesotho",
-    "code": "LS",
-    "dial_code": "+266",
+    "iso2CountryCode": "LS",
+    "dialCode": "+266",
+    "currencySymbol": "L"
   },
   {
     "name": "Liberia",
-    "code": "LR",
-    "dial_code": "+231",
+    "iso2CountryCode": "LR",
+    "dialCode": "+231",
+    "currencySymbol": r"$",
+    "mobileRegex": r"^(555|886|888|880|886|770|776|777)[0-9]{6,7}$"
   },
   {
-    "name": "‏ليبيا",
-    "code": "LY",
-    "dial_code": "+218",
+    "name": "\u200fليبيا",
+    "iso2CountryCode": "LY",
+    "dialCode": "+218",
+    "currencySymbol": "ل.د"
   },
   {
     "name": "Liechtenstein",
-    "code": "LI",
-    "dial_code": "+423",
+    "iso2CountryCode": "LI",
+    "dialCode": "+423",
+    "currencySymbol": "CHF"
   },
   {
     "name": "Lietuva",
-    "code": "LT",
-    "dial_code": "+370",
+    "iso2CountryCode": "LT",
+    "dialCode": "+370",
+    "currencySymbol": "Lt"
   },
   {
     "name": "Luxembourg",
-    "code": "LU",
-    "dial_code": "+352",
+    "iso2CountryCode": "LU",
+    "dialCode": "+352",
+    "currencySymbol": "€"
   },
   {
     "name": "澳門",
-    "code": "MO",
-    "dial_code": "+853",
+    "iso2CountryCode": "MO",
+    "dialCode": "+853",
+    "currencySymbol": "MOP"
   },
   {
     "name": "Македонија",
-    "code": "MK",
-    "dial_code": "+389",
+    "iso2CountryCode": "MK",
+    "dialCode": "+389",
+    "currencySymbol": "ден"
   },
   {
     "name": "Madagasikara",
-    "code": "MG",
-    "dial_code": "+261",
+    "iso2CountryCode": "MG",
+    "dialCode": "+261",
+    "currencySymbol": "MGA",
+    "mobileRegex": r"^0?3[0-9]{8,8}$"
   },
   {
     "name": "Malawi",
-    "code": "MW",
-    "dial_code": "+265",
+    "iso2CountryCode": "MW",
+    "dialCode": "+265",
+    "currencySymbol": "MK",
+    "mobileRegex": r"^0?(77|88|99|21|0?1)[0-9]{6,7}$"
   },
   {
     "name": "Malaysia",
-    "code": "MY",
-    "dial_code": "+60",
+    "iso2CountryCode": "MY",
+    "dialCode": "+60",
+    "currencySymbol": "RM"
   },
   {
     "name": "Maldives",
-    "code": "MV",
-    "dial_code": "+960",
+    "iso2CountryCode": "MV",
+    "dialCode": "+960",
+    "currencySymbol": "Rf"
   },
   {
     "name": "Mali",
-    "code": "ML",
-    "dial_code": "+223",
+    "iso2CountryCode": "ML",
+    "dialCode": "+223",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^0?7(0|[3-9])[0-9]{6,6}$"
   },
   {
     "name": "Malta",
-    "code": "MT",
-    "dial_code": "+356",
+    "iso2CountryCode": "MT",
+    "dialCode": "+356",
+    "currencySymbol": "€"
   },
   {
     "name": "M̧ajeļ",
-    "code": "MH",
-    "dial_code": "+692",
+    "iso2CountryCode": "MH",
+    "dialCode": "+692",
+    "currencySymbol": r"$"
   },
   {
     "name": "Martinique",
-    "code": "MQ",
-    "dial_code": "+596",
+    "iso2CountryCode": "MQ",
+    "dialCode": "+596",
+    "currencySymbol": "€"
   },
   {
     "name": "موريتانيا",
-    "code": "MR",
-    "dial_code": "+222",
+    "iso2CountryCode": "MR",
+    "dialCode": "+222",
+    "currencySymbol": "UM"
   },
   {
     "name": "Maurice",
-    "code": "MU",
-    "dial_code": "+230",
+    "iso2CountryCode": "MU",
+    "dialCode": "+230",
+    "currencySymbol": "₨"
   },
   {
     "name": "Mayotte",
-    "code": "YT",
-    "dial_code": "+262",
+    "iso2CountryCode": "YT",
+    "dialCode": "+262",
+    "currencySymbol": "€"
   },
   {
     "name": "México",
-    "code": "MX",
-    "dial_code": "+52",
+    "iso2CountryCode": "MX",
+    "dialCode": "+52",
+    "currencySymbol": r"$"
   },
   {
     "name": "Micronesia",
-    "code": "FM",
-    "dial_code": "+691",
+    "iso2CountryCode": "FM",
+    "dialCode": "+691",
+    "currencySymbol": r"$"
   },
   {
     "name": "Moldova",
-    "code": "MD",
-    "dial_code": "+373",
+    "iso2CountryCode": "MD",
+    "dialCode": "+373",
+    "currencySymbol": "L"
   },
   {
     "name": "Monaco",
-    "code": "MC",
-    "dial_code": "+377",
+    "iso2CountryCode": "MC",
+    "dialCode": "+377",
+    "currencySymbol": "€"
   },
   {
     "name": "Монгол улс",
-    "code": "MN",
-    "dial_code": "+976",
+    "iso2CountryCode": "MN",
+    "dialCode": "+976",
+    "currencySymbol": "₮"
   },
   {
     "name": "Црна Гора",
-    "code": "ME",
-    "dial_code": "+382",
+    "iso2CountryCode": "ME",
+    "dialCode": "+382",
+    "currencySymbol": "€"
   },
   {
     "name": "Montserrat",
-    "code": "MS",
-    "dial_code": "+1664",
+    "iso2CountryCode": "MS",
+    "dialCode": "+1664",
+    "currencySymbol": r"$"
   },
   {
     "name": "المغرب",
-    "code": "MA",
-    "dial_code": "+212",
+    "iso2CountryCode": "MA",
+    "dialCode": "+212",
+    "currencySymbol": "DH",
+    "mobileRegex": r"^0?[5-8][0-9]{7,8}$"
   },
   {
     "name": "Moçambique",
-    "code": "MZ",
-    "dial_code": "+258",
+    "iso2CountryCode": "MZ",
+    "dialCode": "+258",
+    "currencySymbol": "MT"
   },
   {
     "name": "Myanmar",
-    "code": "MM",
-    "dial_code": "+95",
+    "iso2CountryCode": "MM",
+    "dialCode": "+95",
+    "currencySymbol": "K"
   },
   {
     "name": "Namibia",
-    "code": "NA",
-    "dial_code": "+264",
+    "iso2CountryCode": "NA",
+    "dialCode": "+264",
+    "currencySymbol": r"$",
+    "mobileRegex": r"^0?(6|8)[0-9]{7,7}$"
   },
   {
     "name": "Nauru",
-    "code": "NR",
-    "dial_code": "+674",
+    "iso2CountryCode": "NR",
+    "dialCode": "+674",
+    "currencySymbol": r"$"
   },
   {
     "name": "नेपाल",
-    "code": "NP",
-    "dial_code": "+977",
+    "iso2CountryCode": "NP",
+    "dialCode": "+977",
+    "currencySymbol": "₨"
   },
   {
     "name": "Nederland",
-    "code": "NL",
-    "dial_code": "+31",
+    "iso2CountryCode": "NL",
+    "dialCode": "+31",
+    "currencySymbol": "€"
   },
   {
     "name": "Netherlands Antilles",
-    "code": "AN",
-    "dial_code": "+599",
+    "iso2CountryCode": "AN",
+    "dialCode": "+599",
+    "currencySymbol": "ƒ"
   },
   {
     "name": "Nouvelle-Calédonie",
-    "code": "NC",
-    "dial_code": "+687",
+    "iso2CountryCode": "NC",
+    "dialCode": "+687",
+    "currencySymbol": "₣"
   },
   {
     "name": "New Zealand",
-    "code": "NZ",
-    "dial_code": "+64",
+    "iso2CountryCode": "NZ",
+    "dialCode": "+64",
+    "currencySymbol": r"$"
   },
   {
     "name": "Nicaragua",
-    "code": "NI",
-    "dial_code": "+505",
+    "iso2CountryCode": "NI",
+    "dialCode": "+505",
+    "currencySymbol": r"C$"
   },
   {
     "name": "Niger",
-    "code": "NE",
-    "dial_code": "+227",
+    "iso2CountryCode": "NE",
+    "dialCode": "+227",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^0?9(3|4|6)[0-9]{6,6}$"
   },
   {
     "name": "Nigeria",
-    "code": "NG",
-    "dial_code": "+234",
+    "iso2CountryCode": "NG",
+    "dialCode": "+234",
+    "currencySymbol": "₦",
+    "iso3CurrencyCode": "NGN",
+    "mobileRegex": r"^0?[7-9][0-1][0-9]{8,9}$"
   },
   {
     "name": "Niuē",
-    "code": "NU",
-    "dial_code": "+683",
+    "iso2CountryCode": "NU",
+    "dialCode": "+683",
+    "currencySymbol": r"$"
   },
   {
     "name": "Norfolk Island",
-    "code": "NF",
-    "dial_code": "+672",
+    "iso2CountryCode": "NF",
+    "dialCode": "+672",
+    "currencySymbol": r"$"
   },
   {
     "name": "Northern Mariana Islands",
-    "code": "MP",
-    "dial_code": "+1670",
+    "iso2CountryCode": "MP",
+    "dialCode": "+1670",
+    "currencySymbol": r"$"
   },
   {
     "name": "Norge",
-    "code": "NO",
-    "dial_code": "+47",
+    "iso2CountryCode": "NO",
+    "dialCode": "+47",
+    "currencySymbol": "kr"
   },
   {
     "name": "عمان",
-    "code": "OM",
-    "dial_code": "+968",
+    "iso2CountryCode": "OM",
+    "dialCode": "+968",
+    "currencySymbol": "﷼"
   },
   {
     "name": "Pakistan",
-    "code": "PK",
-    "dial_code": "+92",
+    "iso2CountryCode": "PK",
+    "dialCode": "+92",
+    "currencySymbol": "₨",
+    "mobileRegex": r"^0?3[0-9]{9,9}$"
   },
   {
     "name": "Palau",
-    "code": "PW",
-    "dial_code": "+680",
+    "iso2CountryCode": "PW",
+    "dialCode": "+680",
+    "currencySymbol": r"$"
   },
   {
     "name": "فلسطين",
-    "code": "PS",
-    "dial_code": "+970",
+    "iso2CountryCode": "PS",
+    "dialCode": "+970",
+    "currencySymbol": "₪"
   },
   {
     "name": "Panamá",
-    "code": "PA",
-    "dial_code": "+507",
+    "iso2CountryCode": "PA",
+    "dialCode": "+507",
+    "currencySymbol": "B/."
   },
   {
     "name": "Papua Niugini",
-    "code": "PG",
-    "dial_code": "+675",
+    "iso2CountryCode": "PG",
+    "dialCode": "+675",
+    "currencySymbol": "K"
   },
   {
     "name": "Paraguay",
-    "code": "PY",
-    "dial_code": "+595",
+    "iso2CountryCode": "PY",
+    "dialCode": "+595",
+    "currencySymbol": "Gs"
   },
   {
     "name": "Perú",
-    "code": "PE",
-    "dial_code": "+51",
+    "iso2CountryCode": "PE",
+    "dialCode": "+51",
+    "currencySymbol": "S/."
   },
   {
     "name": "Pilipinas",
-    "code": "PH",
-    "dial_code": "+63",
+    "iso2CountryCode": "PH",
+    "dialCode": "+63",
+    "currencySymbol": "Php"
   },
   {
     "name": "Pitcairn Islands",
-    "code": "PN",
-    "dial_code": "+64",
+    "iso2CountryCode": "PN",
+    "dialCode": "+64",
+    "currencySymbol": r"$"
   },
   {
     "name": "Polska",
-    "code": "PL",
-    "dial_code": "+48",
+    "iso2CountryCode": "PL",
+    "dialCode": "+48",
+    "currencySymbol": "zł"
   },
   {
     "name": "Portugal",
-    "code": "PT",
-    "dial_code": "+351",
+    "iso2CountryCode": "PT",
+    "dialCode": "+351",
+    "currencySymbol": "€"
   },
   {
     "name": "Puerto Rico",
-    "code": "PR",
-    "dial_code": "+1939",
+    "iso2CountryCode": "PR",
+    "dialCode": "+1939",
+    "currencySymbol": r"$"
   },
   {
     "name": "Puerto Rico",
-    "code": "PR",
-    "dial_code": "+1787",
+    "iso2CountryCode": "PR",
+    "dialCode": "+1787",
+    "currencySymbol": r"$"
   },
   {
     "name": "قطر",
-    "code": "QA",
-    "dial_code": "+974",
+    "iso2CountryCode": "QA",
+    "dialCode": "+974",
+    "currencySymbol": "﷼"
   },
   {
     "name": "România",
-    "code": "RO",
-    "dial_code": "+40",
+    "iso2CountryCode": "RO",
+    "dialCode": "+40",
+    "currencySymbol": "lei"
   },
   {
     "name": "Россия",
-    "code": "RU",
-    "dial_code": "+7",
+    "iso2CountryCode": "RU",
+    "dialCode": "+7",
+    "currencySymbol": "₽"
   },
   {
     "name": "Rwanda",
-    "code": "RW",
-    "dial_code": "+250",
+    "iso2CountryCode": "RW",
+    "dialCode": "+250",
+    "currencySymbol": "RWF",
+    "mobileRegex": r"^0?(783|788|75[0-9])[0-9]{6,6}$"
   },
   {
     "name": "La Réunion",
-    "code": "RE",
-    "dial_code": "+262",
+    "iso2CountryCode": "RE",
+    "dialCode": "+262",
+    "currencySymbol": "€"
   },
   {
     "name": "Saint-Barthélemy",
-    "code": "BL",
-    "dial_code": "+590",
+    "iso2CountryCode": "BL",
+    "dialCode": "+590",
+    "currencySymbol": "€"
   },
   {
     "name": "Saint Helena",
-    "code": "SH",
-    "dial_code": "+290",
+    "iso2CountryCode": "SH",
+    "dialCode": "+290",
+    "currencySymbol": "£"
   },
   {
     "name": "Saint Kitts and Nevis",
-    "code": "KN",
-    "dial_code": "+1869",
+    "iso2CountryCode": "KN",
+    "dialCode": "+1869",
+    "currencySymbol": r"$"
   },
   {
     "name": "Saint Lucia",
-    "code": "LC",
-    "dial_code": "+1758",
+    "iso2CountryCode": "LC",
+    "dialCode": "+1758",
+    "currencySymbol": r"$"
   },
   {
     "name": "Saint-Martin",
-    "code": "MF",
-    "dial_code": "+590",
+    "iso2CountryCode": "MF",
+    "dialCode": "+590",
+    "currencySymbol": r"$"
   },
   {
     "name": "Saint-Pierre-et-Miquelon",
-    "code": "PM",
-    "dial_code": "+508",
+    "iso2CountryCode": "PM",
+    "dialCode": "+508",
+    "currencySymbol": "€"
   },
   {
     "name": "Saint Vincent and the Grenadines",
-    "code": "VC",
-    "dial_code": "+1784",
+    "iso2CountryCode": "VC",
+    "dialCode": "+1784",
+    "currencySymbol": r"$"
   },
   {
     "name": "Samoa",
-    "code": "WS",
-    "dial_code": "+685",
+    "iso2CountryCode": "WS",
+    "dialCode": "+685",
+    "currencySymbol": r"WS$"
   },
   {
     "name": "San Marino",
-    "code": "SM",
-    "dial_code": "+378",
+    "iso2CountryCode": "SM",
+    "dialCode": "+378",
+    "currencySymbol": "€"
   },
   {
     "name": "São Tomé e Príncipe",
-    "code": "ST",
-    "dial_code": "+239",
+    "iso2CountryCode": "ST",
+    "dialCode": "+239",
+    "currencySymbol": "Db"
   },
   {
     "name": "العربية السعودية",
-    "code": "SA",
-    "dial_code": "+966",
+    "iso2CountryCode": "SA",
+    "dialCode": "+966",
+    "currencySymbol": "﷼"
   },
   {
     "name": "Sénégal",
-    "code": "SN",
-    "dial_code": "+221",
+    "iso2CountryCode": "SN",
+    "dialCode": "+221",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^0?7[025678][0-9]{7,7}$"
   },
   {
     "name": "Србија",
-    "code": "RS",
-    "dial_code": "+381",
+    "iso2CountryCode": "RS",
+    "dialCode": "+381",
+    "currencySymbol": "din"
   },
   {
     "name": "Seychelles",
-    "code": "SC",
-    "dial_code": "+248",
+    "iso2CountryCode": "SC",
+    "dialCode": "+248",
+    "currencySymbol": "₨"
   },
   {
     "name": "Sierra Leone",
-    "code": "SL",
-    "dial_code": "+232",
+    "iso2CountryCode": "SL",
+    "dialCode": "+232",
+    "currencySymbol": "Le",
+    "mobileRegex":
+        r"^0?(21|25|30|33|34|35|40|44|50|55|66|75|76|77|78|79|88)[0-9][0-9]{5,5}$"
   },
   {
     "name": "Singapore",
-    "code": "SG",
-    "dial_code": "+65",
+    "iso2CountryCode": "SG",
+    "dialCode": "+65",
+    "currencySymbol": r"$"
   },
   {
     "name": "Slovensko",
-    "code": "SK",
-    "dial_code": "+421",
+    "iso2CountryCode": "SK",
+    "dialCode": "+421",
+    "currencySymbol": "Sk"
   },
   {
     "name": "Slovenija",
-    "code": "SI",
-    "dial_code": "+386",
+    "iso2CountryCode": "SI",
+    "dialCode": "+386",
+    "currencySymbol": "€"
   },
   {
     "name": "Solomon Islands",
-    "code": "SB",
-    "dial_code": "+677",
+    "iso2CountryCode": "SB",
+    "dialCode": "+677",
+    "currencySymbol": r"$"
   },
   {
     "name": "Soomaaliya",
-    "code": "SO",
-    "dial_code": "+252",
+    "iso2CountryCode": "SO",
+    "dialCode": "+252",
+    "currencySymbol": "S",
+    "mobileRegex": r"^0?(6|9)[0-9]{8,8}$"
   },
   {
     "name": "South Africa",
-    "code": "ZA",
-    "dial_code": "+27",
+    "iso2CountryCode": "ZA",
+    "dialCode": "+27",
+    "currencySymbol": "R",
+    "mobileRegex": r"^0?(6|7|8)[0-9]{7,7}$"
   },
   {
     "name": "South Sudan",
-    "code": "SS",
-    "dial_code": "+211",
+    "iso2CountryCode": "SS",
+    "dialCode": "+211",
+    "currencySymbol": "£",
+    "mobileRegex": r"^(91|92|95|97|12|1[6-9])[0-9]{7,7}$"
   },
   {
     "name": "South Georgia",
-    "code": "GS",
-    "dial_code": "+500",
+    "iso2CountryCode": "GS",
+    "dialCode": "+500",
+    "currencySymbol": "£"
   },
   {
     "name": "España",
-    "code": "ES",
-    "dial_code": "+34",
+    "iso2CountryCode": "ES",
+    "dialCode": "+34",
+    "currencySymbol": "€"
   },
   {
     "name": "Sri Lanka",
-    "code": "LK",
-    "dial_code": "+94",
+    "iso2CountryCode": "LK",
+    "dialCode": "+94",
+    "currencySymbol": "₨"
   },
   {
     "name": "السودان",
-    "code": "SD",
-    "dial_code": "+249",
+    "iso2CountryCode": "SD",
+    "dialCode": "+249",
+    "currencySymbol": "SDG",
+    "mobileRegex": r"^0?(90|91|92|93|95|96|99)[0-9]{7,7}$"
   },
   {
     "name": "Suriname",
-    "code": "SR",
-    "dial_code": "+597",
+    "iso2CountryCode": "SR",
+    "dialCode": "+597",
+    "currencySymbol": r"$"
   },
   {
     "name": "Svalbard og Jan Mayen",
-    "code": "SJ",
-    "dial_code": "+47",
+    "iso2CountryCode": "SJ",
+    "dialCode": "+47",
+    "currencySymbol": "kr"
   },
   {
     "name": "Swaziland",
-    "code": "SZ",
-    "dial_code": "+268",
+    "iso2CountryCode": "SZ",
+    "dialCode": "+268",
+    "currencySymbol": "L"
   },
   {
     "name": "Sverige",
-    "code": "SE",
-    "dial_code": "+46",
+    "iso2CountryCode": "SE",
+    "dialCode": "+46",
+    "currencySymbol": "kr"
   },
   {
     "name": "Schweiz",
-    "code": "CH",
-    "dial_code": "+41",
+    "iso2CountryCode": "CH",
+    "dialCode": "+41",
+    "currencySymbol": "CHF"
   },
   {
     "name": "سوريا",
-    "code": "SY",
-    "dial_code": "+963",
+    "iso2CountryCode": "SY",
+    "dialCode": "+963",
+    "currencySymbol": "£"
   },
   {
     "name": "臺灣",
-    "code": "TW",
-    "dial_code": "+886",
+    "iso2CountryCode": "TW",
+    "dialCode": "+886",
+    "currencySymbol": r"NT$"
   },
   {
     "name": "Тоҷикистон",
-    "code": "TJ",
-    "dial_code": "+992",
+    "iso2CountryCode": "TJ",
+    "dialCode": "+992",
+    "currencySymbol": "SM"
   },
   {
     "name": "Tanzania",
-    "code": "TZ",
-    "dial_code": "+255",
+    "iso2CountryCode": "TZ",
+    "dialCode": "+255",
+    "currencySymbol": "TSh",
+    "mobileRegex": r"^0?(6|7)[0-9]{8,8}$"
   },
   {
     "name": "ประเทศไทย",
-    "code": "TH",
-    "dial_code": "+66",
+    "iso2CountryCode": "TH",
+    "dialCode": "+66",
+    "currencySymbol": "฿"
   },
   {
     "name": "Timor-Leste",
-    "code": "TL",
-    "dial_code": "+670",
+    "iso2CountryCode": "TL",
+    "dialCode": "+670",
+    "currencySymbol": r"$"
   },
   {
     "name": "Togo",
-    "code": "TG",
-    "dial_code": "+228",
+    "iso2CountryCode": "TG",
+    "dialCode": "+228",
+    "currencySymbol": "CFA",
+    "mobileRegex": r"^(2|7|9)[0-9]{7,7}$"
   },
   {
     "name": "Tokelau",
-    "code": "TK",
-    "dial_code": "+690",
+    "iso2CountryCode": "TK",
+    "dialCode": "+690",
+    "currencySymbol": r"$"
   },
   {
     "name": "Tonga",
-    "code": "TO",
-    "dial_code": "+676",
+    "iso2CountryCode": "TO",
+    "dialCode": "+676",
+    "currencySymbol": r"T$"
   },
   {
     "name": "Trinidad and Tobago",
-    "code": "TT",
-    "dial_code": "+1868",
+    "iso2CountryCode": "TT",
+    "dialCode": "+1868",
+    "currencySymbol": r"TT$"
   },
   {
     "name": "تونس",
-    "code": "TN",
-    "dial_code": "+216",
+    "iso2CountryCode": "TN",
+    "dialCode": "+216",
+    "currencySymbol": 'DT'
   },
   {
     "name": "Türkiye",
-    "code": "TR",
-    "dial_code": "+90",
+    "iso2CountryCode": "TR",
+    "dialCode": "+90",
+    "currencySymbol": "YTL"
   },
   {
     "name": "Türkmenistan",
-    "code": "TM",
-    "dial_code": "+993",
+    "iso2CountryCode": "TM",
+    "dialCode": "+993",
+    "currencySymbol": "m"
   },
   {
     "name": "Turks and Caicos Islands",
-    "code": "TC",
-    "dial_code": "+1649",
+    "iso2CountryCode": "TC",
+    "dialCode": "+1649",
+    "currencySymbol": r"$"
   },
   {
     "name": "Tuvalu",
-    "code": "TV",
-    "dial_code": "+688",
+    "iso2CountryCode": "TV",
+    "dialCode": "+688",
+    "currencySymbol": r"$"
   },
   {
     "name": "Uganda",
-    "code": "UG",
-    "dial_code": "+256",
+    "iso2CountryCode": "UG",
+    "dialCode": "+256",
+    "currencySymbol": "USh",
+    "mobileRegex": r"^0?7[0-9]{8,8}$"
   },
   {
     "name": "Україна",
-    "code": "UA",
-    "dial_code": "+380",
+    "iso2CountryCode": "UA",
+    "dialCode": "+380",
+    "currencySymbol": "₴"
   },
   {
     "name": "دولة الإمارات العربية المتحدة",
-    "code": "AE",
-    "dial_code": "+971",
+    "iso2CountryCode": "AE",
+    "dialCode": "+971",
+    "currencySymbol": "د.إ"
   },
   {
     "name": "United Kingdom",
-    "code": "GB",
-    "dial_code": "+44",
+    "iso2CountryCode": "GB",
+    "dialCode": "+44",
+    "currencySymbol": "£"
   },
   {
     "name": "United States",
-    "code": "US",
-    "dial_code": "+1",
+    "iso2CountryCode": "US",
+    "iso3CurrencyCode": "USD",
+    "dialCode": "+1",
+    "currencySymbol": r"$",
+    "mobileRegex": r"^0?[2-9][0-9]{9,9}$"
   },
   {
     "name": "Uruguay",
-    "code": "UY",
-    "dial_code": "+598",
+    "iso2CountryCode": "UY",
+    "dialCode": "+598",
+    "currencySymbol": r"$U"
   },
   {
     "name": "O‘zbekiston",
-    "code": "UZ",
-    "dial_code": "+998",
+    "iso2CountryCode": "UZ",
+    "dialCode": "+998",
+    "currencySymbol": "лв"
   },
   {
     "name": "Vanuatu",
-    "code": "VU",
-    "dial_code": "+678",
+    "iso2CountryCode": "VU",
+    "dialCode": "+678",
+    "currencySymbol": "Vt"
   },
   {
     "name": "Venezuela",
-    "code": "VE",
-    "dial_code": "+58",
+    "iso2CountryCode": "VE",
+    "dialCode": "+58",
+    "currencySymbol": "Bs"
   },
   {
     "name": "Việt Nam",
-    "code": "VN",
-    "dial_code": "+84",
+    "iso2CountryCode": "VN",
+    "dialCode": "+84",
+    "currencySymbol": "₫"
   },
   {
     "name": "British Virgin Islands",
-    "code": "VG",
-    "dial_code": "+1284",
+    "iso2CountryCode": "VG",
+    "dialCode": "+1284",
+    "currencySymbol": r"$"
   },
   {
     "name": "United States Virgin Islands",
-    "code": "VI",
-    "dial_code": "+1340",
+    "iso2CountryCode": "VI",
+    "dialCode": "+1340",
+    "currencySymbol": r"$"
   },
   {
     "name": "Wallis et Futuna",
-    "code": "WF",
-    "dial_code": "+681",
+    "iso2CountryCode": "WF",
+    "dialCode": "+681",
+    "currencySymbol": "CFP"
   },
   {
     "name": "اليَمَن",
-    "code": "YE",
-    "dial_code": "+967",
+    "iso2CountryCode": "YE",
+    "dialCode": "+967",
+    "currencySymbol": "﷼"
   },
   {
     "name": "Zambia",
-    "code": "ZM",
-    "dial_code": "+260",
+    "iso2CountryCode": "ZM",
+    "dialCode": "+260",
+    "currencySymbol": "ZK",
+    "mobileRegex": r"^0?(95|96|97|76|77)[0-9]{7,7}$"
   },
   {
     "name": "Zimbabwe",
-    "code": "ZW",
-    "dial_code": "+263",
-  },
+    "iso2CountryCode": "ZW",
+    "dialCode": "+263",
+    "currencySymbol": r"Z$",
+    "mobileRegex": r"^0?7(1|3|7|8)[0-9]{7,7}$"
+  }
 ];

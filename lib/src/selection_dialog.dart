@@ -138,8 +138,8 @@ class _SelectionDialogState extends State<SelectionDialog> {
       );
 
   Widget _buildOption(CountryCode e) {
-    return SizedBox(
-      width: 400,
+    return Container(
+      constraints: const BoxConstraints(maxWidth: 400),
       child: Flex(
         direction: Axis.horizontal,
         children: <Widget>[
@@ -151,8 +151,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                 clipBehavior:
                     widget.flagDecoration == null ? Clip.none : Clip.hardEdge,
                 child: Image.asset(
-                  e.flagUri!,
-                  package: 'country_code_picker',
+                  'assets/flags/${e.iso2CountryCode}.png'.toLowerCase(),
                   width: widget.flagWidth,
                 ),
               ),
@@ -194,9 +193,9 @@ class _SelectionDialogState extends State<SelectionDialog> {
     setState(() {
       filteredElements = widget.elements
           .where((e) =>
-              e.code!.contains(s) ||
-              e.dialCode!.contains(s) ||
-              e.name!.toUpperCase().contains(s))
+              e.iso2CountryCode.contains(s) ||
+              e.dialCode.contains(s) ||
+              e.name.toUpperCase().contains(s))
           .toList();
     });
   }
