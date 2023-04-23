@@ -151,7 +151,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                 clipBehavior:
                     widget.flagDecoration == null ? Clip.none : Clip.hardEdge,
                 child: Image.asset(
-                  'assets/flags/${e.iso2CountryCode}.png'.toLowerCase(),
+                  'flags/${e.iso2CountryCode}.png'.toLowerCase(),
                   width: widget.flagWidth,
                 ),
               ),

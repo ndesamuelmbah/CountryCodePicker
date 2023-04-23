@@ -183,7 +183,7 @@ class CountryCodePickerState extends State<CountryCodePicker> {
                         ? const EdgeInsets.only(right: 16.0, left: 8.0)
                         : const EdgeInsets.only(right: 16.0),
                     child: Image.asset(
-                      'assets/flags/${selectedItem!.iso2CountryCode}.png'
+                      'flags/${selectedItem!.iso2CountryCode}.png'
                           .toLowerCase(),
                       width: widget.flagWidth,
                     ),
