@@ -5,6 +5,8 @@ import 'src/country_code.dart';
 import 'src/country_codes.dart';
 import 'src/selection_dialog.dart';
 
+export 'src/country_code.dart';
+
 class CountryCodePicker extends StatefulWidget {
   final ValueChanged<CountryCode>? onChanged;
   final ValueChanged<CountryCode?>? onInit;
