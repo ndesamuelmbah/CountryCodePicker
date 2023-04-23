@@ -6,6 +6,9 @@ import 'src/country_codes.dart';
 import 'src/selection_dialog.dart';
 
 export 'src/country_code.dart';
+// export 'src/country_codes.dart';
+// export 'src/country_localizations.dart';
+// export 'src/selection_dialog.dart';
 
 class CountryCodePicker extends StatefulWidget {
   final ValueChanged<CountryCode>? onChanged;
@@ -185,6 +188,7 @@ class CountryCodePickerState extends State<CountryCodePicker> {
                     child: Image.asset(
                       selectedItem!.flagUri!,
                       width: widget.flagWidth,
+                      package: 'country_code_picker',
                     ),
                   ),
                 ),
