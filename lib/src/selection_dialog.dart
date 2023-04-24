@@ -153,6 +153,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                 child: Image.asset(
                   e.flagUri!,
                   width: widget.flagWidth,
+                  package: 'country_code_picker',
                 ),
               ),
             ),
