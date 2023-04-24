@@ -233,14 +233,6 @@ const List<Map<String, String>> countryCodes = [
     "mobileRegex": r"^6[4-9][0-9]{7,7}$"
   },
   {
-    "name": "Cameroun",
-    "iso2CountryCode": "CM",
-    "dialCode": "+237",
-    "currencySymbol": "CFA",
-    "iso3CurrencyCode": "XAF",
-    "mobileRegex": r"^6[4-9][0-9]{7,7}$"
-  },
-  {
     "name": "Canada",
     "iso2CountryCode": "CA",
     "dialCode": "+1",
