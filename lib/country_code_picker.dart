@@ -6,9 +6,11 @@ import 'src/country_codes.dart';
 import 'src/selection_dialog.dart';
 
 export 'src/country_code.dart';
-// export 'src/country_codes.dart';
-// export 'src/country_localizations.dart';
-// export 'src/selection_dialog.dart';
+export 'src/country_codes.dart';
+export 'src/country_localizations.dart';
+export 'src/selection_dialog.dart';
+export 'src/iso3_currency_codes.dart';
+export 'src/iso3_currency_codes_lookup.dart';
 
 class CountryCodePicker extends StatefulWidget {
   final ValueChanged<CountryCode>? onChanged;
