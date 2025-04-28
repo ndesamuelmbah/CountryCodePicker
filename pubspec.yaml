@@ -6,7 +6,7 @@ repository: https://github.com/ndesamuelmbah/CountryCodePicker
 issue_tracker: https://github.com/ndesamuelmbah/CountryCodePicker/issues
 
 environment:
-  sdk: '>=3.2.2 < 4.0.0'
+  sdk: ^3.5.3
 
 dependencies:
   flutter:
